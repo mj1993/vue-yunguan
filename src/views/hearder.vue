@@ -1,14 +1,12 @@
 <template>
     <div>
-        <p>2222222222222222  222222</p>
+      hearderhearderhearderhearderhearder
     </div>
 </template>
 
-
 <script>
-
     export default {
-        name: "map",
+        name: "hearder",
         data() {
             //数据
             return {}

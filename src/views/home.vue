@@ -1,34 +1,61 @@
 <template>
-    <div>
-        9999999999
-    </div>
+  <el-table
+    :data="tableData3"
+    height="auto"
+    border
+    style="width: 100%">
+    <el-table-column
+      prop="date"
+      label="日期"
+      width="180">
+    </el-table-column>
+    <el-table-column
+      prop="name"
+      label="姓名"
+      width="180">
+    </el-table-column>
+    <el-table-column
+      prop="address"
+      label="地址">
+    </el-table-column>
+  </el-table>
 </template>
 
 <script>
-    export default {
-        name: "home",
-        data() {
-            //数据
-            return {}
-        },
-        methods: {
-            //方法
-        },
-        mounted() {
-            //生命周期，实例化，并挂载到dom
-        },
-        components: {
-            //注册子组件
-        },
-        props: {
-            //接收父组件的传值
-        },
-        watch: {
-            //监听数据的改变
-        }
-    }
+  export default {
+    data() {
+      return {
+        tableData3: [{
+          date: '2016-05-03',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-02',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-04',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-01',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-08',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-06',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          date: '2016-05-07',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }]
+      }
+    },
+
+  }
 </script>
-
-<style scoped>
-
-</style>
